@@ -1,8 +1,8 @@
-import { animals } from "animals";
+import { type Animal, animals } from "animals";
 
 export default function Animal({ params }: { params: { id: string } }) {
 
-    const animal = animals.find(
+    const animal:Animal | undefined = animals.find(
         (animal) => animal.id === params.id
     );
     
@@ -19,7 +19,7 @@ export default function Animal({ params }: { params: { id: string } }) {
                         className="w-screen h-screen bg-cover bg-center bg-no-repeat px-5 sm:px-10 pb-10 sm:pb-10 flex"
                         style={{ backgroundImage: `url(${animal.imageSrc})` }}
                     >
-                        <h2 className="self-end px-4 text-5xl md:text-7xl 2xl:text-9xl">{animal.name}</h2>
+                        <h2 className="self-end text-5xl md:text-7xl 2xl:text-9xl">{animal.name}</h2>
                     </div>
                     
                 )

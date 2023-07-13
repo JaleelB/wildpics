@@ -26,7 +26,7 @@ export default function Home() {
                   height={400}
                   src={animal.imageSrc}
                   alt={animal.name}
-                  className="object-cover object-center h-full transition-all group-hover:opacity-75 group-hover:scale-105"
+                  className="object-cover object-center h-full transition-all group-hover:opacity-75"
                 />
                 <h2 className="text-sm">{animal.name}</h2>
               </Link>
