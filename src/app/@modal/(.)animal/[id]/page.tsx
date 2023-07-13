@@ -16,6 +16,15 @@ export default function Animal({ params }: { params: { id: string } }) {
 
     const [showDialog, setShowDialog] = React.useState(true);
 
+    React.useEffect(() => {
+        if(showDialog) {
+            document.body.style.overflow = "hidden";
+        }
+        else {
+            document.body.style.overflow = "auto";
+        }
+    }, [showDialog]);
+
     if(!animal) return <div>Animal not found</div>
     
     return (
