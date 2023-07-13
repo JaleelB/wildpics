@@ -9,8 +9,10 @@ const fontSans = FontSans({
 
 export default function RootLayout({
   children,
+  modal,
 }: {
   children: React.ReactNode;
+  modal: React.ReactNode;
 }) {
 
   return (
@@ -21,6 +23,7 @@ export default function RootLayout({
           <div className='flex w-screen min-h-screen flex-col'>
             <Header/>
             {children}
+            {modal}
           </div>
       </body>
     </html>
