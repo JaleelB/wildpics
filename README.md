@@ -1,4 +1,4 @@
-# Intercepting Routes Demo Application
+# Next JS 13 Intercepting + Parallel Routes Demo 
 This is a demo application built with Next.js 13 to showcase the usage of intercepting routes and parallel routes feature. The purpose of this application is to demonstrate how to load a route within the current layout while keeping the context for the current page.
 
 https://github.com/JaleelB/wildpics/assets/78449846/3e5da3e9-5505-41fe-bede-2e1541944710
